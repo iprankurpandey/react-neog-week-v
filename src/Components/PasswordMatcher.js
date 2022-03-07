@@ -5,15 +5,15 @@ function PasswordMacther() {
   const [value, setValue] = useState('enter password ');
   function matchPassword(event) {
     let input1 = document.getElementsByClassName('input1');
-    input1 = event.target;
-    let input2 = document.getElementsByClassName('input2');
-    input2 = event.target;
-    if (input1.value.length && input1.value.length === 8) {
+    input1 = event.target.value.length;
+    console.log(input1);
+    let input2 = document.getElementsByClassName('input2').value;
+    input2 = event.target.value.length;
+
+    if (input1 && input2 > 8) {
       setValue('matched');
-      return true;
     } else {
-      setValue('not matched');
-      return false;
+      setValue('not macthed');
     }
   }
   return (
