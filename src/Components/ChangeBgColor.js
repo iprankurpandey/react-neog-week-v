@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import React from 'react';
 function ChangeBgColor() {
-  const [color, setColor] = useState('');
+  const [color, setColor] = useState('red');
   const changeColor = () =>
     setColor('red') ? setColor('green') : setColor('red');
 
