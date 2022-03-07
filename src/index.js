@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Counter from './Components/Counter';
 import ChangeBgColor from './Components/ChangeBgColor';
 import TwitterCountApp from './Components/TwitterCountApp';
+import PasswordMatcher from './Components/PasswordMatcher';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Counter />
       <ChangeBgColor />
       <TwitterCountApp />
+      <PasswordMatcher />
     </div>
   );
 }
