@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import React from 'react';
 function ChangeBgColor() {
-  const [color, setColor] = useState('red');
+  const [color, setColor] = useState('white');
   const changeColor = () =>
-    setColor('red') ? setColor('green') : setColor('red');
+    setColor('red') ? setColor('white') : setColor('red');
 
   return (
     <div style={{ backgroundColor: color }}>
