@@ -1,6 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Counter from './Components/Counter';
+import ChangeBgColor from './Components/ChangeBgColor';
 
-import App from "./App";
+function App() {
+  return (
+    <div>
+      <ChangeBgColor />
+      <Counter />
+    </div>
+  );
+}
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
