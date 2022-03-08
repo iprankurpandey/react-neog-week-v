@@ -7,6 +7,7 @@ import PasswordMatcher from './Components/PasswordMatcher';
 import DisableBtnPasswordMatch from './Components/DisableBtnPasswordMatch';
 import Alphanumeric from './Components/Alphanumeric';
 import ShowPassword from './Components/ShowPassword';
+import MiniFigma from './Components/MiniFigma';
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
       <TwitterCountApp />
       <PasswordMatcher />
       <DisableBtnPasswordMatch />
-      <Alphanumeric /> */}
-      <ShowPassword />
+      <Alphanumeric />
+      <ShowPassword /> */}
+      <MiniFigma />
     </div>
   );
 }
