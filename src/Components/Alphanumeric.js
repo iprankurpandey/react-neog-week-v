@@ -2,17 +2,17 @@ import React from 'react';
 import { useState } from 'react';
 
 function Alphanumeric(event) {
-  const [value, setValue] = useState('alpha password ');
+  const [value, setValue] = useState('enter password ');
 
   function textPassword(event) {
     let input5 = document.querySelector('.input5');
     input5 = event.target.value;
-    let alphabetPattern = '^[a-zA-Z]*$';
-    // let resultMatch = input5.match(alphabetPattern);
-    if (input5.includes(alphabetPattern)) {
-      setValue('macthed');
-    } else {
+    let alphabetPattern = /[a-zA-Z]/;
+    let resultMatch = input5.match(alphabetPattern);
+    if (resultMatch === null) {
       setValue('should include alphabets');
+    } else {
+      setValue('alphbets and numbers are there');
     }
   }
   return (
