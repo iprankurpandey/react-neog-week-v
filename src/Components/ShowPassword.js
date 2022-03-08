@@ -5,10 +5,12 @@ function ShowPassword() {
   const [pwd, setPwd] = useState('show password');
 
   function visiblePassword(event) {
-    let input6 = document.querySelector('.input6').value;
-    if (input6.length > 3) {
+    let input6 = document.querySelector('.input6');
+    if (input6.type === 'password') {
       setPwd('hide password');
+      input6.type = 'text';
     } else {
+      input6.type = 'password';
       setPwd('show password');
     }
   }
