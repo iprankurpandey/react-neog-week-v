@@ -3,13 +3,13 @@ import { useState } from 'react';
 
 function PasswordMacther() {
   const [value, setValue] = useState('enter password ');
-  function matchPassword(event) {
+  function matchPassword() {
     let input1 = document.querySelector('.input1');
     let input2 = document.querySelector('.input2');
     if (input1.value.length === input2.value.length) {
-      setValue('matched');
+      setValue('password matched');
     } else {
-      setValue('not macthed');
+      setValue('password not macthed');
     }
   }
   return (
