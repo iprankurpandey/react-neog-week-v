@@ -5,6 +5,7 @@ import ChangeBgColor from './Components/ChangeBgColor';
 import TwitterCountApp from './Components/TwitterCountApp';
 import PasswordMatcher from './Components/PasswordMatcher';
 import DisableBtnPasswordMatch from './Components/DisableBtnPasswordMatch';
+import Alphanumeric from './Components/Alphanumeric';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <TwitterCountApp />
       <PasswordMatcher />
       <DisableBtnPasswordMatch />
+      <Alphanumeric />
     </div>
   );
 }
