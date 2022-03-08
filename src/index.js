@@ -6,16 +6,18 @@ import TwitterCountApp from './Components/TwitterCountApp';
 import PasswordMatcher from './Components/PasswordMatcher';
 import DisableBtnPasswordMatch from './Components/DisableBtnPasswordMatch';
 import Alphanumeric from './Components/Alphanumeric';
+import ShowPassword from './Components/ShowPassword';
 
 function App() {
   return (
     <div>
-      <Counter />
+      {/* <Counter />
       <ChangeBgColor />
       <TwitterCountApp />
       <PasswordMatcher />
       <DisableBtnPasswordMatch />
-      <Alphanumeric />
+      <Alphanumeric /> */}
+      <ShowPassword />
     </div>
   );
 }
