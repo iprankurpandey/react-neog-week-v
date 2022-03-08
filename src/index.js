@@ -9,6 +9,7 @@ import Alphanumeric from './Components/Alphanumeric';
 import ShowPassword from './Components/ShowPassword';
 import MiniFigma from './Components/MiniFigma';
 import AddtoCart from './Components/AddtoCart';
+import LikeinList from './Components/LikeinList';
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
       <DisableBtnPasswordMatch />
       <Alphanumeric />
       <ShowPassword />
-      <MiniFigma /> */}
-      <AddtoCart />
+      <MiniFigma />
+      <AddtoCart /> */}
+      <LikeinList />
     </div>
   );
 }
