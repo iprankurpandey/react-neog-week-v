@@ -16,7 +16,7 @@ import DarkMode from './Components/DarkMode';
 function App() {
   return (
     <div>
-      {/* <Counter />
+      <Counter />
       <ChangeBgColor />
       <TwitterCountApp />
       <PasswordMatcher />
@@ -26,7 +26,7 @@ function App() {
       <MiniFigma />
       <LikeinList />
       <OutofStockItem />
-      <AddtoCart /> */}
+      <AddtoCart />
       <DarkMode />
     </div>
   );
