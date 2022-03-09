@@ -14,6 +14,7 @@ import OutofStockItem from './Components/OutofStockItem';
 import DarkMode from './Components/DarkMode';
 import Todo from './Components/Todo';
 import Toast from './Components/Toast';
+import SwitchTabs from './Components/SwitchTabs';
 
 function App() {
   return (
@@ -30,8 +31,9 @@ function App() {
       <OutofStockItem />
       <AddtoCart />
       <DarkMode />
-      <Todo /> */}
-      <Toast />
+      <Todo />
+      <Toast /> */}
+      <SwitchTabs />
     </div>
   );
 }
