@@ -13,6 +13,7 @@ import LikeinList from './Components/LikeinList';
 import OutofStockItem from './Components/OutofStockItem';
 import DarkMode from './Components/DarkMode';
 import Todo from './Components/Todo';
+import Toast from './Components/Toast';
 
 function App() {
   return (
@@ -28,8 +29,9 @@ function App() {
       <LikeinList />
       <OutofStockItem />
       <AddtoCart />
-      <DarkMode /> */}
-      <Todo />
+      <DarkMode />
+      <Todo /> */}
+      <Toast />
     </div>
   );
 }
