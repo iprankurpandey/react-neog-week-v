@@ -7,16 +7,9 @@ function DarkMode() {
   const [textColor, setTextColor] = useState();
 
   function lightColor() {
-    setLightMode(colorMode === '' ? 'DarkMode' : 'LightMode');
-    if ((document.body.style.backgroundColor = 'white')) {
-      setBgColor('black');
-      setTextColor('white');
-      setLightMode('White Mode');
-    } else {
-      setBgColor('white');
-      setTextColor('black');
-      setLightMode('Dark Mode');
-    }
+    setLightMode(colorMode === 'Light Mode' ? 'Dark Mode' : 'Light Mode');
+    setBgColor(bgcolor === 'white' ? 'black' : 'white');
+    setTextColor(textColor === 'black' ? 'white' : 'black');
   }
 
   return (
