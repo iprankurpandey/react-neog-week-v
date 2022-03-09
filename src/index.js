@@ -10,6 +10,7 @@ import ShowPassword from './Components/ShowPassword';
 import MiniFigma from './Components/MiniFigma';
 import AddtoCart from './Components/AddtoCart';
 import LikeinList from './Components/LikeinList';
+import OutofStockItem from './Components/OutofStockItem';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <ShowPassword />
       <MiniFigma />
       <LikeinList /> */}
+      <OutofStockItem />
       <AddtoCart />
     </div>
   );
