@@ -11,6 +11,7 @@ import MiniFigma from './Components/MiniFigma';
 import AddtoCart from './Components/AddtoCart';
 import LikeinList from './Components/LikeinList';
 import OutofStockItem from './Components/OutofStockItem';
+import DarkMode from './Components/DarkMode';
 
 function App() {
   return (
@@ -23,9 +24,10 @@ function App() {
       <Alphanumeric />
       <ShowPassword />
       <MiniFigma />
-      <LikeinList /> */}
+      <LikeinList />
       <OutofStockItem />
-      <AddtoCart />
+      <AddtoCart /> */}
+      <DarkMode />
     </div>
   );
 }
