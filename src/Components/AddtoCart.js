@@ -9,19 +9,21 @@ function AddtoCart() {
   const cartData = (product) => {
     setItem('Added to Cart');
     setCartCount((cartCount) => cartCount + 1);
-    setCartItem(...cartItem, product);
+    setCartItem([...cartItem, product]);
   };
 
   return (
     <div>
-      <button onClick={(cartData) => cartData('P1')} className="b1">
+      <button onClick={() => cartData('P1')} className="b1">
         P1- {Item}
       </button>
-      <button onClick={(cartData) => cartData('P2')} className="b2">
+      <button onClick={() => cartData('P2')} className="b2">
         P2-{Item}
       </button>
       <button className="cart"> cart : {cartCount} </button>
-      cartItem.map((products) => <li> {products} </li>)
+      {cartItem.map((products) => (
+        <li> {products} </li>
+      ))}
     </div>
   );
 }
