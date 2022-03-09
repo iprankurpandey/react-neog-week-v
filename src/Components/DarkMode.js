@@ -2,19 +2,20 @@ import React from 'react';
 import { useState } from 'react';
 
 function DarkMode() {
-  const [colorMode, setLightMode] = useState('LightMode');
+  const [colorMode, setLightMode] = useState('Dark Mode');
   const [bgcolor, setBgColor] = useState();
   const [textColor, setTextColor] = useState();
 
   function lightColor() {
+    setLightMode(colorMode === '' ? 'DarkMode' : 'LightMode');
     if ((document.body.style.backgroundColor = 'white')) {
       setBgColor('black');
       setTextColor('white');
-      setLightMode('DarkMode');
+      setLightMode('White Mode');
     } else {
       setBgColor('white');
       setTextColor('black');
-      setLightMode('whitemode');
+      setLightMode('Dark Mode');
     }
   }
 
