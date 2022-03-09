@@ -2,8 +2,7 @@ import { useState } from 'react';
 import React from 'react';
 function ChangeBgColor() {
   const [color, setColor] = useState('white');
-  const changeColor = () =>
-    setColor('red') ? setColor('white') : setColor('red');
+  const changeColor = () => setColor(color === 'red' ? 'green' : 'red');
 
   return (
     <div style={{ backgroundColor: color }}>

@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 function DarkMode() {
-  const [colorMode, setLightMode] = useState('Dark Mode');
+  const [colorMode, setLightMode] = useState('change color');
   const [bgcolor, setBgColor] = useState();
   const [textColor, setTextColor] = useState();
 

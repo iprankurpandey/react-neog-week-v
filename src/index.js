@@ -12,11 +12,12 @@ import AddtoCart from './Components/AddtoCart';
 import LikeinList from './Components/LikeinList';
 import OutofStockItem from './Components/OutofStockItem';
 import DarkMode from './Components/DarkMode';
+import Todo from './Components/Todo';
 
 function App() {
   return (
     <div>
-      <Counter />
+      {/* <Counter />
       <ChangeBgColor />
       <TwitterCountApp />
       <PasswordMatcher />
@@ -27,7 +28,8 @@ function App() {
       <LikeinList />
       <OutofStockItem />
       <AddtoCart />
-      <DarkMode />
+      <DarkMode /> */}
+      <Todo />
     </div>
   );
 }
