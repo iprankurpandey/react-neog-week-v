@@ -22,8 +22,8 @@ function App() {
       <Alphanumeric />
       <ShowPassword />
       <MiniFigma />
-      <AddtoCart /> */}
-      <LikeinList />
+      <LikeinList /> */}
+      <AddtoCart />
     </div>
   );
 }
