@@ -26,14 +26,14 @@ function App() {
       <DisableBtnPasswordMatch />
       <Alphanumeric />
       <ShowPassword />
-      <MiniFigma />
+      <MiniFigma /> */}
       <LikeinList />
-      <OutofStockItem />
+      {/* <OutofStockItem />
       <AddtoCart />
       <DarkMode />
       <Todo />
-      <Toast /> */}
-      <SwitchTabs />
+      <Toast />
+      <SwitchTabs /> */}
     </div>
   );
 }
