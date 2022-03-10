@@ -21,17 +21,17 @@ function App() {
     <div>
       {/* <Counter />
       <ChangeBgColor />
-      <TwitterCountApp />
+      <TwitterCountApp /> */}
       <PasswordMatcher />
       <DisableBtnPasswordMatch />
       <Alphanumeric />
       <ShowPassword />
-      <MiniFigma /> */}
-      <LikeinList />
+      <MiniFigma />
+      {/* <LikeinList /> */}
       {/* <OutofStockItem />
       <AddtoCart />
-      <DarkMode />
-      <Todo />
+      <DarkMode /> */}
+      {/* <Todo />
       <Toast />
       <SwitchTabs /> */}
     </div>
