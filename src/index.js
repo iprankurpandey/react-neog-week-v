@@ -32,10 +32,10 @@ function App() {
       <OutofStockItem />
       <AddtoCart />
       <DarkMode /> */}
-      {/* <Todo />
-      <Toast /> */}
-      <SwitchTabs />
-      <UserNameandPasswordMatch />
+      <Todo />
+      {/* <Toast /> */}
+      {/* <SwitchTabs /> */}
+      {/* <UserNameandPasswordMatch /> */}
     </div>
   );
 }

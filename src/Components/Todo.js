@@ -2,15 +2,24 @@ import React from 'react';
 import { useState } from 'react';
 
 function Todo() {
-  const [state, setState] = useState();
-  function renderText(event) {
-    let dom = text.map((e) => <li> {e} </li>);
-    console.log(dom);
+  const [todolist, setTodoList] = useState();
+  const [message, setMessage] = useState();
+
+  function onChangeInput(e) {
+    let text = e.target.value;
+    setMessage(text);
   }
 
+
+
+  function onClickEvent() {
+    setTodoList((prevList)=>...prevList,)
+
+  }
   return (
     <div>
-      <input onChange={renderText} />
+      <input onChange={onChangeInput} />
+      <button onClick={addFunction}> add to do list</button>
     </div>
   );
 }
