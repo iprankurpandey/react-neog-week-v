@@ -27,7 +27,7 @@ function App() {
       <DisableBtnPasswordMatch />
       <Alphanumeric />
       <ShowPassword />
-      <MiniFigma />
+      {/* <MiniFigma /> */}
       {/* <LikeinList /> */}
       {/* <OutofStockItem />
       <AddtoCart />
