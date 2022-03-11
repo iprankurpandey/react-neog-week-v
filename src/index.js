@@ -20,21 +20,21 @@ import UserNameandPasswordMatch from './Components/UserNameandPasswordMatch';
 function App() {
   return (
     <div>
-      <Counter />
+      {/* <Counter />
       <ChangeBgColor />
       <TwitterCountApp />
       <PasswordMatcher />
       <DisableBtnPasswordMatch />
       <Alphanumeric />
       <ShowPassword />
-      {/* <MiniFigma /> */}
-      {/* <LikeinList /> */}
-      {/* <OutofStockItem />
+      <MiniFigma />
+      <LikeinList />
+      <OutofStockItem />
       <AddtoCart />
       <DarkMode /> */}
       {/* <Todo />
-      <Toast />
-      <SwitchTabs /> */}
+      <Toast /> */}
+      <SwitchTabs />
       <UserNameandPasswordMatch />
     </div>
   );
