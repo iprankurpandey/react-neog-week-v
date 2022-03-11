@@ -5,7 +5,7 @@ function LikeinList() {
   const [list, setList] = useState('click to render list');
 
   function ListLikes() {
-    const listItem = ['Apple', 'Mango', 'Banana', 'Pappu'];
+    const listItem = ['Apple', 'Mango', 'Banana', 'Pappu', 'Prankur '];
     const mapItem = listItem.map((e) => <li> {e + '👍'}</li>);
     setList(mapItem);
   }

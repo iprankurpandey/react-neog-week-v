@@ -17,6 +17,8 @@ function ShowPassword() {
 
   return (
     <div>
+      
+      <h5>show password </h5>
       <input type="password" className="input6" />
       <button onClick={visiblePassword}>{pwd}</button>
     </div>

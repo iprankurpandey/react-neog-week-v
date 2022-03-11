@@ -17,6 +17,7 @@ function Alphanumeric(event) {
   }
   return (
     <div>
+      <h5> Alpha Numeric Password</h5>
       <h2>Password : {value} </h2>
       <input onChange={textPassword} className="input5" />
     </div>

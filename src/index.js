@@ -15,13 +15,14 @@ import DarkMode from './Components/DarkMode';
 import Todo from './Components/Todo';
 import Toast from './Components/Toast';
 import SwitchTabs from './Components/SwitchTabs';
+import UserNameandPasswordMatch from './Components/UserNameandPasswordMatch';
 
 function App() {
   return (
     <div>
-      {/* <Counter />
+      <Counter />
       <ChangeBgColor />
-      <TwitterCountApp /> */}
+      <TwitterCountApp />
       <PasswordMatcher />
       <DisableBtnPasswordMatch />
       <Alphanumeric />
@@ -34,6 +35,7 @@ function App() {
       {/* <Todo />
       <Toast />
       <SwitchTabs /> */}
+      <UserNameandPasswordMatch />
     </div>
   );
 }

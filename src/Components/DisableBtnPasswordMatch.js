@@ -2,28 +2,37 @@ import React from 'react';
 import { useState } from 'react';
 
 function DisableBtnPasswordMatch() {
-  const [newvalue, setValue] = useState('enter password ');
-  function matchPassword(event) {
-    let input3 = document.querySelector('.input3');
-    let input4 = document.querySelector('.input4');
-    let btn = document.querySelector('.btn');
+  const [input1, setInput1] = useState();
+  const [input2, setInput2] = useState();
 
-    if (input3.value.length === input4.value.length) {
-      setValue('password matched');
-      btn.disabled = false;
+  function validate() {
+    if (input1 !== '' && input2 !== '' && input1 === input2) {
+      return false;
     } else {
-      setValue('password not macthed');
-      btn.disabled = true;
+      return true;
     }
   }
+
   return (
     <div>
-      <h2>Password : {newvalue} </h2>
-      <input onChange={matchPassword} className="input3" />
-      <input onChange={matchPassword} className="input4" />
-      <button className="btn">watch me </button>
+      <span> {validate()}</span>
+      <h5>Password button disabled matcher</h5>
+
+      <input
+        value={input1}
+        onChange={(e) => {
+          setInput1(e.target.value);
+        }}
+      />
+      <input
+        value={input2}
+        onChange={(e) => {
+          setInput2(e.target.value);
+        }}
+      />
+      <button disabled={validate()}> watch me </button>
+      {/* <div> {validate()}</div> */}
     </div>
   );
 }
-
 export default DisableBtnPasswordMatch;
