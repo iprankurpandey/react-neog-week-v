@@ -16,6 +16,7 @@ import Todo from './Components/Todo';
 import Toast from './Components/Toast';
 import SwitchTabs from './Components/SwitchTabs';
 import UserNameandPasswordMatch from './Components/UserNameandPasswordMatch';
+import DanishTask from './Components/DanishTask';
 
 function App() {
   return (
@@ -32,10 +33,11 @@ function App() {
       <OutofStockItem />
       <AddtoCart />
       <DarkMode /> */}
-      <Todo />
+      {/* <Todo /> */}
       {/* <Toast /> */}
       {/* <SwitchTabs /> */}
       {/* <UserNameandPasswordMatch /> */}
+      <DanishTask />
     </div>
   );
 }

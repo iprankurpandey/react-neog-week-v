@@ -10,11 +10,8 @@ function Todo() {
     setMessage(text);
   }
 
-
-
   function onClickEvent() {
-    setTodoList((prevList)=>...prevList,)
-
+    setTodoList();
   }
   return (
     <div>
