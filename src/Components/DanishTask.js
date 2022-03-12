@@ -17,9 +17,8 @@ function DanishTask() {
   }
 
   function onSubmitgetValue(e) {
-    setDisplaydata(username);
-    setDisplaydata(email);
-    setDisplaydata(password);
+    e.preventDefault();
+    setDisplaydata([username, email, password]);
   }
 
   return (
@@ -27,7 +26,7 @@ function DanishTask() {
       <button onClick={showform}> Click me </button>
       <form
         style={{ display: displayValue }}
-        onSubmit={(e) => onSubmitgetValue()}
+        onSubmit={(e) => onSubmitgetValue(e)}
       >
         <input
           value={username}

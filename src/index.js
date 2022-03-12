@@ -37,7 +37,7 @@ function App() {
       {/* <Toast /> */}
       {/* <SwitchTabs /> */}
       {/* <UserNameandPasswordMatch /> */}
-      {/* <DanishTask /> */}
+      <DanishTask />
     </div>
   );
 }
