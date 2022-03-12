@@ -2,19 +2,31 @@ import React from 'react';
 import { useState } from 'react';
 
 function Todo() {
-  const [input5, setTodoList] = useState();
-  const [message, setMessage] = useState([]);
+  const [todo, setTodo] = useState('');
+  const [todoList, setTodoList] = useState([]);
 
-  function getvalue() {
-    const update = [...message, input5];
-    setMessage(update);
-  }
+  const handleClick = () => {
+    const task = {
+      name: todo,
+    };
+    setTodoList([...todoList, task]);
+  };
+
+  const handleChange = (event) => {
+    event.preventDefault();
+    setTodo(event.target.value);
+  };
+
   return (
     <div>
-      <input value={input5} onChange={(e) => setTodoList(e.target.value)} />
-      <button onClick={getvalue}> add to do list</button>
+      <input type="text" onChange={handleChange} placeholder="Add Activities" />
+      <button onClick={handleClick}>Add task</button>
 
-      {message}
+      <ul>
+        {todoList.map((todo) => {
+          return <li> {todo.name} </li>;
+        })}
+      </ul>
     </div>
   );
 }
