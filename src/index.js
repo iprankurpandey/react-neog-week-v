@@ -33,11 +33,11 @@ function App() {
       <OutofStockItem />
       <AddtoCart />
       <DarkMode /> */}
-      {/* <Todo /> */}
+      <Todo />
       {/* <Toast /> */}
       {/* <SwitchTabs /> */}
       {/* <UserNameandPasswordMatch /> */}
-      <DanishTask />
+      {/* <DanishTask /> */}
     </div>
   );
 }
