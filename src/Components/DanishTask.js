@@ -16,16 +16,19 @@ function DanishTask() {
     }
   }
 
-  function onSubmitgetValue() {
-    console.log(username);
-    console.log(email);
-    console.log(password);
+  function onSubmitgetValue(e) {
+    setDisplaydata(username);
+    setDisplaydata(email);
+    setDisplaydata(password);
   }
 
   return (
     <div>
       <button onClick={showform}> Click me </button>
-      <form style={{ display: displayValue }} onSubmit={onSubmitgetValue}>
+      <form
+        style={{ display: displayValue }}
+        onSubmit={(e) => onSubmitgetValue()}
+      >
         <input
           value={username}
           type="text"
@@ -45,12 +48,9 @@ function DanishTask() {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button> submit</button>
-        <div> username is : {username}</div>
-      <div> email is : {email}</div>
-      <div> password is : {password}</div>
       </form>
 
-    
+      {displaydata}
     </div>
   );
 }
