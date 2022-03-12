@@ -2,19 +2,34 @@ import React from 'react';
 import { useState } from 'react';
 
 function Todo() {
-  const [todo, setTodo] = useState('');
-  const [todoList, setTodoList] = useState([]);
+  const [tasks, setTasks] = useState('');
+  const [list, setList] = useState([]);
 
   const handleClick = () => {
-    const task = {
-      name: todo,
+    const todo = {
+      id: Math.random(),
+      name: tasks,
+      complete: false,
     };
-    setTodoList([...todoList, task]);
+
+    setList(list.concat(todo));
+  };
+  const handleStrike = ({ id, complete }) => {
+    const todo = [...list];
+    setList(
+      list.map((it) => {
+        if (it.id === id) {
+          it.complete = !complete;
+        }
+        return it;
+      })
+    );
+    return todo;
   };
 
-  const handleChange = (event) => {
-    event.preventDefault();
-    setTodo(event.target.value);
+  const handleChange = (e) => {
+    e.preventDefault();
+    setTasks(e.target.value);
   };
 
   return (
@@ -23,8 +38,16 @@ function Todo() {
       <button onClick={handleClick}>Add task</button>
 
       <ul>
-        {todoList.map((todo) => {
-          return <li> {todo.name} </li>;
+        {list.map((task) => {
+          return (
+            <li
+              style={{ textDecoration: task.complete ? 'line-through' : '' }}
+              key={task.id}
+              onClick={() => handleStrike(task)}
+            >
+              {task.name}
+            </li>
+          );
         })}
       </ul>
     </div>
