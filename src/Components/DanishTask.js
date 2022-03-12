@@ -3,9 +3,10 @@ import { useState } from 'react';
 
 function DanishTask() {
   const [displayValue, setDisplayValue] = useState('none');
-  const [text, setTextValue] = useState();
+  const [username, setTextValue] = useState();
   const [password, setPassword] = useState();
   const [email, setEmail] = useState();
+  const [displaydata, setDisplaydata] = useState();
 
   function showform() {
     if (displayValue == 'block') {
@@ -14,19 +15,19 @@ function DanishTask() {
       setDisplayValue('block');
     }
   }
+
   function onSubmitgetValue() {
-    let name = text;
-    console.log(name);
-    let password = { password };
-    let email = { email };
-    // return name, email, password;
+    console.log(username);
+    console.log(email);
+    console.log(password);
   }
+
   return (
     <div>
       <button onClick={showform}> Click me </button>
-      <form style={{ display: displayValue }}>
+      <form style={{ display: displayValue }} onSubmit={onSubmitgetValue}>
         <input
-          value={text}
+          value={username}
           type="text"
           placeholder="name"
           onChange={(e) => setTextValue(e.target.value)}
@@ -43,11 +44,13 @@ function DanishTask() {
           placeholder="password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button onChange={onSubmitgetValue}> submit</button>
+        <button> submit</button>
+        <div> username is : {username}</div>
+      <div> email is : {email}</div>
+      <div> password is : {password}</div>
       </form>
-      {/* <div> name is : {text} </div>
-      <div> password is : {password} </div>
-      <div> email is : {email} </div> */}
+
+    
     </div>
   );
 }
